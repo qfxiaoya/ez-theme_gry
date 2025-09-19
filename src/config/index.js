@@ -499,12 +499,19 @@ export const config  = {
             // 等待时间（秒），用户需要等待多少秒才能关闭弹窗，设为0表示无需等待
             closeWaitSeconds: 0
         },
+        // 工单图片设置
+        isImageHosting: false, // 是否启用工单图片上传功能
+        // imgBB 图床 api 设置 前往imgBB注册账号 https://imgbb.com/ 获取 apiKey
+        imgbbApiKey: '',
     },
 
     // 流量明细配置
     TRAFFICLOG_CONFIG: {
         // 是否启用流量明细页面 (true=启用, false=禁用)
         enableTrafficLog: true, // 默认启用
+
+        //是否启用流量明表格 (true=启用, false=禁用）
+        showTrafficTable: true, // 默认启用
 
         // 显示多少天的流量记录
         daysToShow: 30, // 默认显示30天

@@ -377,7 +377,11 @@ export default {
         popup: {
             close_btn: 'Close',
             wait_close_btn: 'Close in {seconds}s'
-        }
+        },
+        upPictures: 'Upload images',
+        uploadingImages: 'Uploading images...',
+        uploadTipText: 'Drag and drop images here or click to upload',
+        uploadDescText: 'Supports JPG, PNG, GIF formats, up to 5 MB',
     },
     profile: {
         title: 'User Center',
@@ -768,6 +772,7 @@ export default {
     docs: {
         title: 'Documentation Center',
         searchPlaceholder: 'Search documentation...',
+        noAccessPrompt: 'You currently have no active plan. Purchase a plan to view content in this section',
         loading: 'Loading documentation...',
         retry: 'Retry',
         clearSearch: 'Clear Search',
