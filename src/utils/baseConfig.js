@@ -883,3 +883,19 @@ const DEFAULT_AUTH_CONFIG = {
 };
 
 export const AUTH_CONFIG = mergeDeep(DEFAULT_AUTH_CONFIG, getConfig('AUTH_CONFIG'));
+
+/**
+ * 添加默认导航栏配置
+ */
+const DEFAULT_NAVIGATION_CONFIG = {
+    // 设置导航栏第三个位置显示的内容
+    // 可选值: 'invite', 'docs', 'tickets', 'nodes', 'orders', 'traffic', 'wallet', 'profile'
+    thirdNavItem: 'invite',  // 默认显示邀请
+
+    // 可选的第四个导航项，插入在 "更多" 之前；为空字符串或未设置则不插入
+    // 可选值同上: 'invite', 'docs', 'tickets', 'nodes', 'orders', 'traffic', 'wallet', 'profile'
+    fourthNavItem: ''
+};
+
+// 导出合并后的导航栏配置
+export const NAVIGATION_CONFIG = mergeDeep(DEFAULT_NAVIGATION_CONFIG, getConfig('NAVIGATION_CONFIG'));
