@@ -30,8 +30,8 @@ export const config  = {
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
             'https://gurenyun.org/api/v1',
-            'https://sub618.uc0.cn/api/v1',
-            'https://xn--9kqsd13p.top/api/v1'
+            'https://ggy1.watah.cn/api/v1',
+            // 'http://xn--9kqsd13p.top/api/v1'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
